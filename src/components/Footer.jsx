@@ -1,5 +1,5 @@
 import { BriefcaseBusiness, CodeXml, Sparkles } from "lucide-react";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.jpg";
 
 export default function Footer({ onNavigate }) {
   return (
