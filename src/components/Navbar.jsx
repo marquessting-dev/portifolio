@@ -12,7 +12,7 @@ export default function Navbar({ activePage, onNavigate, darkMode, onToggleTheme
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className="fixed inset-x-0 top-0 z-50 border-b border-white/50 bg-white/70 backdrop-blur-2xl dark:border-white/10 dark:bg-[#05070c]/70"
+      className="fixed inset-x-0 top-0 z-50 border-b border-white/50 bg-white/85 backdrop-blur-xl dark:border-white/10 dark:bg-[#05070c]/85"
     >
       <nav className="container-premium flex h-20 items-center justify-between">
         <div className="h-11 w-11" aria-hidden="true" />

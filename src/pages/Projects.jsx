@@ -1,16 +1,27 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag, Warehouse } from "lucide-react";
 import ProjectCard from "../components/ProjectCard.jsx";
 
-const deliveryProject = {
-  title: "Plataforma Delivery PappaiFood",
-  description:
-    "Experiência de pedidos moderna para restaurantes, com foco em velocidade, catálogo visual e jornada simples.",
-  category: "Delivery",
-  techs: ["React", "Tailwind", "API", "UI/UX"],
-  icon: ShoppingBag,
-  url: "https://app.papaifood.com.br/",
-};
+const projects = [
+  {
+    title: "Plataforma Delivery PappaiFood",
+    description:
+      "Experiência de pedidos moderna para restaurantes, com foco em velocidade, catálogo visual e jornada simples.",
+    category: "Delivery",
+    techs: ["React", "Tailwind", "API", "UI/UX"],
+    icon: ShoppingBag,
+    url: "https://app.papaifood.com.br/",
+  },
+  {
+    title: "Gerenciamento de Centro de Distribuição",
+    description:
+      "Sistema para gerenciamento de centros de distribuição e controle de estoque.",
+    category: "Gestão Empresarial",
+    techs: ["React.js", "PostgreSQL"],
+    icon: Warehouse,
+    url: "https://distribuicao.papaifood.com.br",
+  },
+];
 
 export default function Projects() {
   return (
@@ -32,21 +43,25 @@ export default function Projects() {
               className="mx-auto max-w-4xl text-center"
             >
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-600 dark:text-cyan-300">
-                Projeto
+                Projetos
               </p>
               <h1 className="text-5xl font-semibold tracking-normal text-slate-950 sm:text-7xl dark:text-white">
-                Delivery PappaiFood.
+                Soluções digitais em produção.
               </h1>
               <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-                Uma plataforma de delivery com visual premium, fluxo simples,
-                interface responsiva e foco em uma experiência rápida para o
-                cliente final.
+                Projetos desenvolvidos para simplificar operações, conectar
+                serviços e criar experiências digitais rápidas e funcionais.
               </p>
             </motion.div>
 
-            <motion.div layout className="mx-auto mt-12 grid max-w-2xl gap-5">
+            <motion.div
+              layout
+              className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2"
+            >
               <AnimatePresence mode="popLayout">
-                <ProjectCard project={deliveryProject} />
+                {projects.map((project, index) => (
+                  <ProjectCard key={project.title} project={project} index={index} />
+                ))}
               </AnimatePresence>
             </motion.div>
           </div>

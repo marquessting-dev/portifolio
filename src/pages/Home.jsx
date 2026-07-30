@@ -1,13 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
 import {
   BriefcaseBusiness,
+  Braces,
   Code2,
   CodeXml,
-  Cpu,
-  Headphones,
+  GitBranch,
   Layers3,
   MonitorCog,
-  Network,
   PlugZap,
 } from "lucide-react";
 import AboutSection from "../components/AboutSection.jsx";
@@ -16,34 +15,34 @@ import SocialCard from "../components/SocialCard.jsx";
 
 const skills = [
   {
-    icon: Headphones,
-    title: "Suporte Técnico",
-    text: "Diagnóstico, atendimento, documentação e solução com foco em estabilidade.",
+    icon: CodeXml,
+    title: "HTML5 & CSS3",
+    text: "Estruturas semânticas, layouts responsivos e estilos modernos para a web.",
   },
   {
-    icon: Network,
-    title: "Redes",
-    text: "Configuração, conectividade, infraestrutura e visão prática de ambientes reais.",
+    icon: Braces,
+    title: "JavaScript",
+    text: "Interatividade, lógica de programação e experiências dinâmicas no navegador.",
   },
   {
     icon: Code2,
-    title: "React Front-end",
-    text: "Interfaces responsivas, componentes reutilizáveis e experiências modernas.",
-  },
-  {
-    icon: Cpu,
-    title: "Hardware",
-    text: "Manutenção, upgrades, montagem e análise técnica de equipamentos.",
-  },
-  {
-    icon: PlugZap,
-    title: "APIs",
-    text: "Integrações, consumo de dados e criação de fluxos digitais conectados.",
+    title: "React.js",
+    text: "Interfaces modernas, estados, hooks e aplicações baseadas em componentes.",
   },
   {
     icon: Layers3,
-    title: "UI/UX",
-    text: "Layouts limpos, hierarquia visual, usabilidade e acabamento premium.",
+    title: "Bootstrap & Tailwind",
+    text: "Construção ágil de interfaces responsivas com consistência visual.",
+  },
+  {
+    icon: PlugZap,
+    title: "APIs REST",
+    text: "Consumo e integração de dados para conectar interfaces a serviços externos.",
+  },
+  {
+    icon: GitBranch,
+    title: "Git & GitHub",
+    text: "Versionamento de código, organização de branches e colaboração em projetos.",
   },
 ];
 
@@ -88,11 +87,10 @@ export default function Home({ onNavigate }) {
                 <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-600 dark:text-cyan-300">
                   Skills
                 </p>
-                <h2 className="section-title">Capacidades para construir e resolver.</h2>
+                <h2 className="section-title">Tecnologias para criar experiências digitais.</h2>
                 <p className="section-copy mt-6">
-                  Um conjunto técnico que mistura suporte, infraestrutura,
-                  programação e sensibilidade visual para entregar produtos mais
-                  completos.
+                  Dos fundamentos à integração, uma base front-end focada em interfaces
+                  responsivas, componentizadas e prontas para produção.
                 </p>
               </div>
             </div>

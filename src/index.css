@@ -35,7 +35,7 @@
   }
 
   .glass-panel {
-    @apply border border-white/60 bg-white/70 shadow-premium backdrop-blur-2xl dark:border-white/10 dark:bg-white/[0.06];
+    @apply border border-white/60 bg-white/70 shadow-premium backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.06];
   }
 
   .section-title {

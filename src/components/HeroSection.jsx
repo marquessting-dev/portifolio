@@ -1,6 +1,6 @@
 import { ArrowRight, CodeXml, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import adairPhoto from "../assets/adair.png";
+import adairPhoto from "../assets/adair.webp";
 
 export default function HeroSection({ onNavigate }) {
   return (
@@ -21,9 +21,9 @@ export default function HeroSection({ onNavigate }) {
             Adair Marques
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl dark:text-slate-300">
-            Desenvolvedor front-end, profissional de suporte técnico e entusiasta
-            de IA, criando interfaces rápidas, refinadas e soluções digitais que
-            unem tecnologia, clareza e experiência premium.
+            Desenvolvedor front-end, analista de suporte técnico e entusiasta de
+            IA. Crio interfaces rápidas e refinadas, além de soluções digitais que
+            unem tecnologia, clareza e uma excelente experiência de uso.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -51,13 +51,15 @@ export default function HeroSection({ onNavigate }) {
           transition={{ duration: 0.9, delay: 0.12, ease: "easeOut" }}
           className="relative mx-auto flex w-full max-w-[500px] items-center justify-center"
         >
-          <div className="absolute h-[72%] w-[72%] rounded-full bg-cyan-400/20 blur-3xl dark:bg-cyan-300/15" />
-          <div className="absolute bottom-8 h-24 w-[68%] rounded-full bg-slate-950/15 blur-3xl dark:bg-cyan-950/30" />
-          <motion.img
+          <div className="absolute h-[72%] w-[72%] rounded-full bg-cyan-400/20 blur-2xl dark:bg-cyan-300/15" />
+          <div className="absolute bottom-8 h-24 w-[68%] rounded-full bg-slate-950/15 blur-2xl dark:bg-cyan-950/30" />
+          <img
             src={adairPhoto}
             alt="Foto de Adair Marques"
-            animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+            width="800"
+            height="1200"
+            decoding="async"
+            fetchPriority="high"
             className="relative z-10 w-[min(88vw,440px)] object-contain drop-shadow-[0_34px_46px_rgba(15,23,42,0.34)] [mask-image:radial-gradient(ellipse_58%_72%_at_50%_48%,#000_56%,rgba(0,0,0,0.82)_66%,transparent_82%)] dark:drop-shadow-[0_34px_52px_rgba(34,211,238,0.18)]"
           />
         </motion.div>
