@@ -32,14 +32,14 @@ export default function HeroSection({ onNavigate }) {
               onClick={() => onNavigate("projects")}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-7 py-4 text-sm font-semibold text-white shadow-premium transition duration-300 hover:-translate-y-1 hover:shadow-glow dark:bg-white dark:text-slate-950"
             >
-              Ver Projetos
+              Ver projetos
               <ArrowRight size={18} className="transition group-hover:translate-x-1" />
             </button>
             <a
               href="#social"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/75 px-7 py-4 text-sm font-semibold text-slate-800 shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-white/10 dark:bg-white/[0.06] dark:text-white"
             >
-              Redes Sociais
+              Redes sociais
               <CodeXml size={18} />
             </a>
           </div>

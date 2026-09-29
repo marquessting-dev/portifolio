@@ -15,7 +15,7 @@ const milestones = [
   {
     icon: Cpu,
     title: "Evolução Digital",
-    text: "Migração natural para programação com React, APIs, UI/UX e inteligência artificial aplicada a soluções úteis.",
+    text: "Evolução para o desenvolvimento com React, APIs, UI/UX e inteligência artificial aplicada a soluções úteis.",
   },
 ];
 
@@ -35,8 +35,8 @@ export default function AboutSection() {
             </p>
             <h2 className="section-title">Tecnologia com repertório de campo.</h2>
             <p className="section-copy mt-6">
-              Minha trajetória começou no suporte técnico, infraestrutura, redes
-              e manutenção, onde aprendi a transformar problemas complexos em
+              Minha trajetória começou nas áreas de suporte técnico, infraestrutura,
+              redes e manutenção, onde aprendi a transformar problemas complexos em
               respostas claras. Hoje, levo essa visão prática para o front-end,
               criando interfaces com React, integrações com APIs, experiências
               bem desenhadas e soluções digitais ampliadas por IA.

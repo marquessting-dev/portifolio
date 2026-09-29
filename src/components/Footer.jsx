@@ -2,6 +2,8 @@ import { BriefcaseBusiness, CodeXml, Sparkles } from "lucide-react";
 import logo from "../assets/logo.jpg";
 
 export default function Footer({ onNavigate }) {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="border-t border-slate-200/70 bg-white/55 py-10 backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.03]">
       <div className="container-premium flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
@@ -20,7 +22,7 @@ export default function Footer({ onNavigate }) {
           <span>
             <span className="block font-semibold">Adair Marques</span>
             <span className="block text-sm text-slate-500 dark:text-slate-400">
-              Todos Direitos Reservados ©
+              © {currentYear} Todos os direitos reservados.
             </span>
           </span>
         </button>
@@ -36,7 +38,7 @@ export default function Footer({ onNavigate }) {
             <CodeXml size={18} />
           </a>
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/marquessting/"
             target="_blank"
             rel="noreferrer"
             className="grid h-11 w-11 place-items-center rounded-full border border-slate-200 bg-white/70 text-slate-700 transition hover:-translate-y-0.5 hover:text-slate-950 dark:border-white/10 dark:bg-white/[0.06] dark:text-slate-300 dark:hover:text-white"

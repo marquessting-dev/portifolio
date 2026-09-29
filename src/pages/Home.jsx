@@ -85,7 +85,7 @@ export default function Home({ onNavigate }) {
             <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-600 dark:text-cyan-300">
-                  Skills
+                  Competências
                 </p>
                 <h2 className="section-title">Tecnologias para criar experiências digitais.</h2>
                 <p className="section-copy mt-6">
@@ -131,18 +131,18 @@ export default function Home({ onNavigate }) {
                   <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-600 dark:text-cyan-300">
                     Destaque
                   </p>
-                  <h2 className="section-title">Delivery com acabamento de produto real.</h2>
+                  <h2 className="section-title">Uma experiência de delivery completa.</h2>
                   <p className="section-copy mt-6">
-                    Destaque para a Plataforma Delivery PappaiFood, uma solução
-                    digital com interface moderna, fluxo objetivo e visual
-                    preparado para apresentação profissional.
+                    A Plataforma Delivery PappaiFood combina uma interface moderna,
+                    uma jornada de compra objetiva e uma experiência pensada para
+                    facilitar os pedidos.
                   </p>
                   <button
                     type="button"
                     onClick={() => onNavigate("projects")}
                     className="mt-8 inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:shadow-glow dark:bg-white dark:text-slate-950"
                   >
-                    Ver projeto
+                    Ver projetos
                     <MonitorCog size={18} />
                   </button>
                 </div>
@@ -174,7 +174,7 @@ export default function Home({ onNavigate }) {
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-cyan-600 dark:text-cyan-300">
                 Redes sociais
               </p>
-              <h2 className="section-title">Conecte-se com meus trabalhos e bastidores.</h2>
+              <h2 className="section-title">Acompanhe meu trabalho e minha trajetória.</h2>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
               {socials.map((social, index) => (
