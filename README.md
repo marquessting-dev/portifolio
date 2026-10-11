@@ -34,7 +34,7 @@ A logo do Axion usa WebP sem perdas. Para atualizar a marca ou gerar novamente a
 
 ## Publicação
 
-Publique o diretório `dist`. A rota `/projetos` precisa servir `index.html` quando acessada diretamente. O arquivo `public/_redirects` configura isso em serviços compatíveis, como Netlify e Cloudflare Pages; outros provedores precisam de uma regra equivalente. Não há publicação automática neste projeto.
+Publique o diretório `dist`. A rota `/projetos` precisa servir `index.html` quando acessada diretamente. O arquivo `vercel.json` configura essa rota na Vercel; `public/_redirects` atende serviços compatíveis, como Netlify e Cloudflare Pages. Outros provedores precisam de uma regra equivalente. O deploy automático depende da integração do provedor com a branch `master` do GitHub.
 
 Antes de publicar, substitua `/social-cover.png` nos metadados de `index.html` pela URL absoluta da imagem no domínio final, e adicione a URL canônica e `og:url` com o endereço confirmado do portfólio.
 
