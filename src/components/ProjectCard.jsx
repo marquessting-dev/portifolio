@@ -24,9 +24,17 @@ export default function ProjectCard({ project, index = 0 }) {
       </div>
 
       <h3 className="mt-7 text-2xl font-semibold tracking-normal">{project.title}</h3>
-      <p className="mt-3 flex-1 leading-7 text-slate-600 dark:text-slate-300">
+      {project.status && !project.unavailable && <p className="mt-3 text-xs font-semibold text-cyan-700 dark:text-cyan-300">{project.status}</p>}
+      <p className="mt-3 flex-1 whitespace-pre-line leading-7 text-slate-600 dark:text-slate-300">
         {project.description}
       </p>
+
+      {project.role && (
+        <div className="mt-5 rounded-2xl border border-cyan-600/20 bg-cyan-500/5 p-4">
+          <p className="text-sm font-semibold text-slate-950 dark:text-white">Minha atuação</p>
+          <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">{project.role}</p>
+        </div>
+      )}
 
       <div className="mt-6 flex flex-wrap gap-2">
         {project.techs.map((tech) => (
@@ -39,15 +47,29 @@ export default function ProjectCard({ project, index = 0 }) {
         ))}
       </div>
 
-      <a
+      <details className="mt-6 border-t border-slate-200 pt-5 dark:border-white/10">
+        <summary className="cursor-pointer text-sm font-semibold text-cyan-700 dark:text-cyan-300">Sobre este projeto</summary>
+        <dl className="mt-4 space-y-4 text-sm leading-6 text-slate-600 dark:text-slate-300">
+          <div><dt className="font-semibold text-slate-950 dark:text-white">Objetivo</dt><dd className="mt-1">{project.objective}</dd></div>
+          <div><dt className="font-semibold text-slate-950 dark:text-white">Escopo</dt><dd className="mt-1">{project.scope}</dd></div>
+        </dl>
+      </details>
+
+      {project.unavailable ? (
+        <div className="mt-7 rounded-2xl border border-amber-300/50 bg-amber-100/60 px-5 py-3 text-center dark:bg-amber-400/10">
+          <p className="text-sm font-semibold text-amber-800 dark:text-amber-200">Temporariamente indisponível</p>
+          <p className="mt-1 text-xs text-amber-800 dark:text-amber-200">{project.status}</p>
+        </div>
+      ) : <a
         href={project.url}
         target="_blank"
         rel="noreferrer"
         className="mt-7 inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:bg-cyan-600 dark:bg-white dark:text-slate-950 dark:hover:bg-cyan-200"
+        aria-label={`Abrir ${project.title} em uma nova aba`}
       >
-        Visualizar
+        Acessar projeto
         <ExternalLink size={16} />
-      </a>
+      </a>}
     </motion.article>
   );
 }

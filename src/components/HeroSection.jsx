@@ -14,16 +14,16 @@ export default function HeroSection({ onNavigate }) {
         >
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-4 py-2 text-sm font-medium text-slate-600 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-white/[0.06] dark:text-slate-300">
             <Sparkles size={16} className="text-cyan-500" />
-            Experiências digitais modernas, úteis e elegantes
+            React · Interfaces · Integrações
           </div>
 
           <h1 className="max-w-5xl text-5xl font-semibold tracking-normal text-slate-950 sm:text-7xl lg:text-8xl dark:text-white">
             Adair Marques
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl dark:text-slate-300">
-            Desenvolvedor front-end, analista de suporte técnico e entusiasta de
-            IA. Crio interfaces rápidas e refinadas, além de soluções digitais que
-            unem tecnologia, clareza e uma excelente experiência de uso.
+            Desenvolvedor front-end com React e experiência em suporte e
+            infraestrutura. Construo interfaces e integrações para simplificar
+            operações e transformar problemas reais em soluções digitais.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -36,10 +36,10 @@ export default function HeroSection({ onNavigate }) {
               <ArrowRight size={18} className="transition group-hover:translate-x-1" />
             </button>
             <a
-              href="#social"
+              href="#contact"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white/75 px-7 py-4 text-sm font-semibold text-slate-800 shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-white/10 dark:bg-white/[0.06] dark:text-white"
             >
-              Redes sociais
+              Vamos conversar
               <CodeXml size={18} />
             </a>
           </div>
