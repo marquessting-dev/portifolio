@@ -3,8 +3,6 @@ import HeroSection from "../components/HeroSection.jsx";
 import SocialCard from "../components/SocialCard.jsx";
 import AxionShowcase from "../components/AxionShowcase.jsx";
 import ContactSection from "../components/ContactSection.jsx";
-import ProjectCard from "../components/ProjectCard.jsx";
-import { projects } from "../data/projects.js";
 import { BriefcaseBusiness, CodeXml } from "lucide-react";
 
 const skills = ["HTML5", "CSS3", "JavaScript", "React", "Tailwind CSS", "Bootstrap", "APIs REST", "Git & GitHub"];
@@ -22,12 +20,9 @@ export default function Home({ onNavigate }) {
           <div className="mb-10 max-w-3xl">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-300">Projetos selecionados</p>
             <h2 className="section-title">Tecnologia aplicada a negócios.</h2>
-            <p className="section-copy mt-5">Do delivery à gestão: conheça os projetos que fazem parte do meu trabalho.</p>
+            <p className="section-copy mt-5">Conheça o Axion ERP e minha participação no desenvolvimento da interface.</p>
           </div>
           <AxionShowcase onNavigate={onNavigate} />
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
-            {projects.map((project, index) => <ProjectCard key={project.id} project={project} index={index} />)}
-          </div>
         </div>
       </section>
       <AboutSection />

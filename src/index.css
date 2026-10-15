@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.axion-image-dialog {
+  width: calc(100% - 2rem);
+  max-width: 1440px;
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 1rem;
+  background: #101419;
+}
+
+.axion-image-dialog::backdrop {
+  background: rgb(2 6 23 / 0.85);
+}
+
+body:has(.axion-image-dialog[open]) {
+  overflow: hidden;
+}
+
 @layer base {
   :root {
     color-scheme: light;

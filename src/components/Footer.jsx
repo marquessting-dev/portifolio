@@ -1,5 +1,5 @@
 import { BriefcaseBusiness, CodeXml, Sparkles } from "lucide-react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/axion-logo.webp";
 
 export default function Footer({ onNavigate }) {
   const currentYear = new Date().getFullYear();
@@ -10,13 +10,17 @@ export default function Footer({ onNavigate }) {
         <button
           type="button"
           onClick={() => onNavigate("home")}
-          className="flex items-center gap-3 text-left"
+          className="flex flex-col items-start gap-3 text-left sm:flex-row sm:items-center sm:gap-5"
         >
-          <span className="grid h-11 w-11 place-items-center overflow-hidden rounded-2xl bg-white shadow-sm dark:bg-white/10">
+          <span className="relative block h-14 w-28 shrink-0 overflow-hidden">
             <img
               src={logo}
-              alt="Logo Adair Marques"
-              className="h-full w-full object-cover object-center"
+              alt="Axion Gestão"
+              width="1952"
+              height="2208"
+              loading="lazy"
+              decoding="async"
+              className="absolute left-0 top-[-62%] h-auto w-full brightness-0 dark:brightness-100"
             />
           </span>
           <span>

@@ -3,16 +3,15 @@ import { ShoppingBag, Warehouse } from "lucide-react";
 export const projects = [
   {
     id: "delivery",
-    title: "Plataforma Delivery PappaiFood",
-    description: "Uma interface de pedidos para restaurantes, com catálogo visual e uma jornada de compra objetiva.",
+    title: "Plataforma Delivery Axion Food",
+    description: "O Axion Food é uma plataforma de pedidos online que conecta clientes a restaurantes em uma experiência simples e organizada.\n\nA aplicação reúne busca de estabelecimentos, cardápio digital e sacola de compras, com opções de entrega ou retirada. A interface facilita a escolha dos produtos e a montagem do pedido, mantendo as principais ações acessíveis durante a navegação.",
     category: "Delivery",
     techs: ["React", "Tailwind", "API"],
     icon: ShoppingBag,
-    url: "https://app.papaifood.com.br/",
-    unavailable: true,
-    status: "Retorna em breve",
-    objective: "Facilitar a consulta ao cardápio e a experiência de pedidos em restaurantes.",
-    scope: "Cardápio digital, interface de pedidos e integração com API.",
+    url: "https://delivery.erpaxion.com.br/",
+    unavailable: false,
+    objective: "Facilitar a descoberta de restaurantes, a escolha de produtos e a montagem de pedidos para entrega ou retirada.",
+    scope: "Busca de restaurantes, cardápio digital, sacola de compras, acesso à conta do cliente e integração com API.",
   },
   {
     id: "distribution",
